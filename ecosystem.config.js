@@ -18,10 +18,10 @@ module.exports = {
   deploy: {
     production: {
       user: 'ubuntu',
-      host: ['119.29.96.147'],
+      host: ['118.24.33.228'],
       ref: 'origin/master',
       repo: 'https://github.com/wyyx/xyd_wx_backend.git',
-      path: '/www/website/production',
+      path: '/home/ubuntu/xyd_wx_backend/production',
       'pre-deploy': 'git fetch origin master && git reset --hard origin/master',
       'post-deploy': 'yarn start && pm2 startOrRestart ecosystem.config.js --env production'
     }
