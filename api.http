@@ -1,0 +1,6 @@
+POST http://localhost:8000/api/html HTTP/1.1
+Content-Type: text/plain
+
+{
+  "url": "https://www.toutiao.com/a6715546554066797059/"
+}
