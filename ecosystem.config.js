@@ -17,10 +17,10 @@ module.exports = {
   ],
   deploy: {
     production: {
-      user: 'root',
-      host: ['149.28.11.92'],
+      user: 'ubuntu',
+      host: ['119.29.96.147'],
       ref: 'origin/master',
-      repo: 'https://github.com/wyyx/angular-demo-home.git',
+      repo: 'https://github.com/wyyx/xyd_wx_backend.git',
       path: '/www/website/production',
       'pre-deploy': 'git fetch origin master && git reset --hard origin/master',
       'post-deploy': 'yarn start && pm2 startOrRestart ecosystem.config.js --env production'
